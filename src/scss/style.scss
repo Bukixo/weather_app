@@ -4,59 +4,89 @@ h1 {
   font-size: 50px;
 }
 body {
-
-
-
-  // -webkit-animation: background 45s cubic-bezier(1,0,0,1) infinite;
-  // animation: background 45s cubic-bezier(1,0,0,1) infinite;
+  background: #2A2A2A;
 }
 
-
-// @-webkit-keyframes background {
-//   0% { background-color: #ddd6f3; }
-//   30% { background-color: #faaca8; }
-//   60% { background-color: #ddd6f3; }
-//   100% { background-color: #faaca8; }
-//
-//
-// }
-//
-// @keyframes background {
-//   0% { background-color: #ddd6f3; }
-//   30% { background-color: #faaca8; }
-//   60% { background-color: #ddd6f3; }
-//   100% { background-color: #faaca8; }
-//
-// }
-.fade-in-out {
-  transition-duration: 5s;
-  transition: 2s linear all;
-  opacity: 1;
-}
-
-.fade-in-out.ng-hide {
-  opacity: 0;
-}
+//-------------------------- CARD DEISGN --------------------//
 
 .card-container {
-  .card {
-    transition: all linear 0.5s;
-    border-radius: 10px;
-    margin: 20px;
-    height: 450px;
-    background: #8e9eab;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
-    //width: 300px;
-    }
   div {
     div {
       overflow-y: scroll;
       height: 550px;
       text-align: center;
+      .card {
+        transition: all linear 0.5s;
+        border-radius: 10px;
+        margin: 20px;
+        height: 450px;
+        -webkit-animation: background 45s cubic-bezier(1,0,0,1) infinite;
+        animation: background 45s cubic-bezier(1,0,0,1) infinite;
+        }
+      }
     }
   }
-}
+
+  @-webkit-keyframes background {
+    0% { background-color: #E2601C; }
+    8% { background-color: #E47421; }
+    12% { background-color: #E17C2D; }
+    16% { background-color: #D27F40; }
+    20% { background-color: #BE7442; }
+    24% { background-color: #AB6D54; }
+    28% { background-color: #AA6C53; }
+    32% { background-color: #755D67; }
+    36% { background-color: #635870; }
+    38% { background-color: #4D4E6E; }
+    42% { background-color: #3A4467; }
+    45% { background-color: #263960; }
+    49% { background-color: #1E305E; }
+    53% { background-color: #142A59; }
+    57% { background-color: #08204F; }
+    61% { background-color: #142A59; }
+    65% { background-color: #1E305E; }
+    67% { background-color: #263960; }
+    71% { background-color: #3A4467; }
+    75% { background-color: #4D4E6E; }
+    79% { background-color: #635870; }
+    83% { background-color: #755D67; }
+    87% { background-color: #AA6C53; }
+    91% { background-color: #AB6D54; }
+    93% { background-color: #BE7442; }
+    95% { background-color: #D27F40; }
+    97% { background-color: #E17C2D; }
+    98% { background-color: #E47421; }
+    100% { background-color: #E2601C; }
+  }
+
+  @keyframes background {
+    0% { background-color: #E2601C; }
+    8% { background-color: #E47421; }
+    12% { background-color: #E17C2D; }
+    16% { background-color: #D27F40; }
+    20% { background-color: #BE7442; }
+    24% { background-color: #AB6D54; }
+    28% { background-color: #AA6C53; }
+    32% { background-color: #755D67; }
+    36% { background-color: #635870; }
+    38% { background-color: #4D4E6E; }
+    42% { background-color: #3A4467; }
+    45% { background-color: #263960; }
+    49% { background-color: #1E305E; }
+    53% { background-color: #142A59; }
+    57% { background-color: #08204F; }
+    61% { background-color: #142A59; }
+    65% { background-color: #1E305E; }
+    67% { background-color: #263960; }
+    71% { background-color: #3A4467; }
+    75% { background-color: #4D4E6E; }
+    79% { background-color: #635870; }
+    83% { background-color: #755D67; }
+    87% { background-color: #AA6C53; }
+    91% { background-color: #AB6D54; }
+    93% { background-color: #BE7442; }
+    95% { background-color: #D27F40; }
+    97% { background-color: #E17C2D; }
+    98% { background-color: #E47421; }
+    100% { background-color: #E2601C; }
+  }

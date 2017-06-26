@@ -1,0 +1,71 @@
+// Import all of your scss files here
+h1 {
+  font-family: 'Bowlby One', cursive;
+  color: white;
+  font-size: 50px;
+}
+body {
+
+
+
+  // -webkit-animation: background 45s cubic-bezier(1,0,0,1) infinite;
+  // animation: background 45s cubic-bezier(1,0,0,1) infinite;
+}
+
+
+// @-webkit-keyframes background {
+//   0% { background-color: #ddd6f3; }
+//   30% { background-color: #faaca8; }
+//   60% { background-color: #ddd6f3; }
+//   100% { background-color: #faaca8; }
+//
+//
+// }
+//
+// @keyframes background {
+//   0% { background-color: #ddd6f3; }
+//   30% { background-color: #faaca8; }
+//   60% { background-color: #ddd6f3; }
+//   100% { background-color: #faaca8; }
+//
+// }
+.fade {
+   font-family: verdana;
+  font-size:30px;
+  margin:30px 10px;
+  height:100px;
+  width:100%;
+}
+/* The starting CSS styles for the enter animation */
+.fade.ng-enter {
+  transition:0.5s linear all;
+  opacity:0;
+}
+
+/* The finishing CSS styles for the enter animation */
+.fade.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+.card-container {
+  .card {
+    transition: all linear 0.5s;
+    border-radius: 10px;
+    margin: 20px;
+    height: 450px;
+    background: #8e9eab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+    //width: 300px;
+    }
+  div {
+    div {
+      overflow-y: scroll;
+      height: 550px;
+      text-align: center;
+    }
+  }
+}

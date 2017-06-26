@@ -18,14 +18,11 @@ function WeatherCtrl($http) {
     console.log('the city:', vm.addCity, 'the code: ',vm.addCode, 'this text:', this.text);
     console.log('hello');
 
-    weatherIndex();
+    weatherIndex(vm.addCity, vm.addCity);
   }
 
-  //weatherIndex();
-
-
   function weatherIndex() {
-    $http.get('http://api.openweathermap.org/data/2.5/forecast?q=london,gb&appid=a9e0ecbc5f24b77be8c521d121b1ba6c')
+    $http.get(`http://api.openweathermap.org/data/2.5/forecast?q=${vm.addCity},${vm.addCode}&appid=a9e0ecbc5f24b77be8c521d121b1ba6c`)
       .then((res) => {
         console.log(res.data);
         vm.all = [];
@@ -56,6 +53,7 @@ function WeatherCtrl($http) {
         console.log('the temp',vm.dayTime);
 
         vm.city = res.data.city.name;
+
 
       });
   }

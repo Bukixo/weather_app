@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <title>Angular Stack Setup</title>
     <link href="https://fonts.googleapis.com/css?family=Bowlby+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- inject:js -->
     <!-- endinject -->
     <!-- inject:css -->
     <!-- endinject -->
   </head>
   <body ng-controller="WeatherCtrl as weather">
-    <h1>WEATHER</h1>
-
     <div class="row card-container">
       <div class="col-md-4 col-md-offset-4">
         <div class="row">
           <div class="col-md-12">
+              <h3>Enter the city and its code in the form below then scroll to check the forecast.</h3>
 
                 <form id="addNewCity" ng-submit="weather.addNewCity()">
                   <input type="cityText" ng-model="weather.addCity" placeholder="city">
@@ -24,7 +24,7 @@
                 </form>
 
 
-            <p> In the city of {{ weather.city }}</p>
+            <h2> {{ weather.city }}</h2>
               <div class="row">
                 <img src="moon.png" alt="">
                 <div ng-show = "true" class="col-md-12" ng-repeat="weather in weather.all">

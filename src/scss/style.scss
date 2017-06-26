@@ -3,8 +3,22 @@ h1 {
   color: white;
   font-size: 50px;
 }
+
+h2 {
+  font-family: 'Bowlby One', cursive;
+  color: #666666;
+  font-size: 40px;
+}
+
+h3
+ {
+   font-family: 'Lato', sans-serif;
+   color: #666666;
+   font-size: 25px;
+ }
 body {
-  background: #2A2A2A;
+  margin-top: 50px;
+  background: white;;
 }
 
 //-------------------------- CARD DEISGN --------------------//
@@ -90,3 +104,17 @@ body {
     98% { background-color: #E47421; }
     100% { background-color: #E2601C; }
   }
+
+// --------------------- FORM DESIGN ------------------ //
+
+input {
+  border: 1px solid #f4f4f4;
+  border-radius: 4px;
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+input:hover {
+  border: 6px solid #f4f4f4;
+  background-color: white;
+}

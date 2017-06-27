@@ -16,6 +16,8 @@ h3
    color: #666666;
    font-size: 25px;
  }
+
+
 body {
   margin-top: 50px;
   background: white;;
@@ -28,12 +30,14 @@ body {
     div {
       overflow-y: scroll;
       height: 550px;
+      //background-color: yellow;
       text-align: center;
       .card {
         transition: all linear 0.5s;
         border-radius: 10px;
         margin: 20px;
-        height: 450px;
+        height: 370px;
+        padding: 15px;
         -webkit-animation: background 45s cubic-bezier(1,0,0,1) infinite;
         animation: background 45s cubic-bezier(1,0,0,1) infinite;
         }
@@ -117,4 +121,60 @@ input {
 input:hover {
   border: 6px solid #f4f4f4;
   background-color: white;
+}
+
+
+// ------------------------- media query --------------------- //
+
+/* ----------- iPhone  ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .card-container {
+    margin-top: 90px;
+    transform: translateY(350px);
+    div {
+      div {
+        height: 700px;
+        .card {
+          text-align: center;
+          margin: 10, 60px;
+          border-radius: 20px;
+            h1 {
+              font-size: 70px;
+              padding: 15px;
+            }
+          }
+        }
+      }
+    }
+}
+
+
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+  .card-container {
+    margin-top: 90px;
+    transform: translateY(220px);
+    div {
+      div {
+        height: 700px;
+        .card {
+          text-align: center;
+          margin: 10, 60px;
+          border-radius: 20px;
+            h1 {
+              font-size: 70px;
+              padding: 15px;
+            }
+          }
+        }
+      }
+    }
 }

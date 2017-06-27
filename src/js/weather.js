@@ -8,8 +8,8 @@ function WeatherCtrl($http) {
   const vm = this;
 
 //vm.addCity and vm.addCode refers to the template literals inside the get request. addCity() is a function that binds the the user input with template literal, therefore user is able to change location. This is done by incuding a ngModel. The two template literals, which essentially is the ngModel - so the user input, is then passed into the weatherIndex() which runs the get request.
-  vm.addCity = 'lagos';
-  vm.addCode = 'ng';
+  vm.addCity = '';
+  vm.addCode = '';
 
   vm.addNewCity = addNewCity;
 
@@ -42,7 +42,7 @@ function WeatherCtrl($http) {
               const description = res.data.list[`${i}`].weather[0].description;
               vm.description.push(description);
 
-              /* the reason why I pushed data into vm.temp and vm.dayTime is because i wanted to manipulate the json data and show that on the frontend. ie converting the temp into celsius however I'm not able to print it on the front-end as the arrays I created. So is what I commented out below useless? */
+              /* the reason why I pushed data into vm.temp and vm.dayTime is because i wanted to manipulate the json data and show that on the frontend. ie converting the temp which is in kelvin into celsius however, although I am able to console log it, I'm not able to print it on the front-end as the arrays I created. Thats why I commented it out for now */
 
               // const day = res.data.list[`${i}`].dt_txt;
               // vm.dayTime.push(day);

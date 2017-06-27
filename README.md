@@ -19,6 +19,10 @@ I created cards which hold in the weather information, which the user can view b
 
 Simplicty is key for this app so all the user needs to do is login in their desired city and code into the form and cards will update.
 
+### Testing
+
+As Unit testing is not my strong points, I decided to to give it a go and attempt to test the controller. I feel if I had more time to focus on the testing alone I would have been able to successfully write a working test suite.
+
 
 ### How to run
 

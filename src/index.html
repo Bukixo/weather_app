@@ -2,7 +2,7 @@
 <html ng-app="WeatherApp">
   <head>
     <meta charset="utf-8">
-    <title>Angular Stack Setup</title>
+    <title>Weather app</title>
     <link href="https://fonts.googleapis.com/css?family=Bowlby+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- inject:js -->
@@ -16,20 +16,15 @@
         <div class="row">
           <div class="col-md-12">
               <h3>Enter the city and its code in the form below then scroll to check the forecast.</h3>
-
                 <form id="addNewCity" ng-submit="weather.addNewCity()">
-                  <input type="cityText" ng-model="weather.addCity" placeholder="city">
-                  <input type="codeText" ng-model="weather.addCode" placeholder="code">
+                  <input type="cityText" ng-model="weather.addCity" placeholder="city ie london">
+                  <input type="codeText" ng-model="weather.addCode" placeholder="code ie gb/us">
                   <input type="submit" value="Add">
                 </form>
-
-
-            <h2> {{ weather.city }}</h2>
+              <h2> {{ weather.city }}</h2>
               <div class="row">
-                
-                <div ng-show = "true" class="col-md-12" ng-repeat="weather in weather.all">
+                <div class="col-md-12" ng-repeat="weather in weather.all">
                   <div class = "card day animated-item" ng-repeat="description in weather.weather">
-
                     <h1>{{ description.description }}</h1> <hr> <h1>{{weather.dt_txt}}</h1>
                     <!-- //<h1>{{weather.main.temp}}degrees</h1> -->
                   </div>

@@ -6,7 +6,7 @@
   "scripts": {
     "postinstall": "bower install && gulp deploy"
   },
-  "author": "Buki Thompson <bukithompson@hotmail.co.uk>",
+  "author": "bukithompson <bukithompson@hotmail.co.uk>",
   "license": "ISC",
   "gulp": {
     "srcDir": "src/",

@@ -17,7 +17,7 @@ Creating http requests to make calls to the api. See weather.js comments for mor
 
 I created cards which hold in the weather information, which the user can view by just scrolling the page. I wanted to give it a sunrise/sunset feel so I incorporated SCSS transition for the background of the cards.
 
-Simplicty is key for this app so all the user needs to do is login in their desired city and code into the form and cards will update.
+Simplicity is key for this app so all the user needs to do is login in their desired city and code into the form and cards will update.
 
 ### Testing
 
